@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   color: rgb(104, 103, 103);
   position: relative;
@@ -17,10 +18,10 @@
 
 .notification__dot {
   background-color: rgb(29, 155, 240);
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.4rem;
+  width: 0.4rem;
   position: absolute;
-  top: 0.7rem;
+  top: 0.8rem;
   right: 10.5rem;
   border-radius: 50%;
 }
@@ -35,13 +36,9 @@
   margin-right: 0.8rem;
 }
 
-.sidebar__link div {
-  font-size: 1.2rem;
-}
-
 .sidebar__link .twitter {
   background-color: rgb(29, 155, 240);
-  padding: 8px;
+  padding: 0.6rem;
   border-radius: 50%;
 }
 
@@ -49,13 +46,14 @@
   background-color: rgb(29, 155, 240);
 }
 
+/* post button */
 .tweet__button {
   background-color: rgb(26, 141, 218);
   color: white;
   border: none;
   border-radius: 2rem;
-  padding: 1rem 6rem;
-  margin: 2rem;
+  padding: 0.6rem 6rem;
+  margin: 1rem;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
