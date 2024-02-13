@@ -3,162 +3,242 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter Clone</title>
-    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/picture.css" />
-    <link rel="stylesheet" href="./css/twitter.css" />
-    <link rel="stylesheet" href="./css/side-bar.css" />
+    <link rel="stylesheet" href="./css/1st-section.css" />
+    <link rel="stylesheet" href="./css/2nd-section.css" />
+    <link rel="stylesheet" href="./css/3rd-section.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <title>Twitter Clone</title>
   </head>
   <body>
-    <header class="header">
-      <!-- left side -->
-      <div class="left__side">
+    <main class="container">
+      <section class="first__section">
         <img class="logo" src="./icons/twitter-logo.svg" alt="Twitter logo" />
-      </div>
-      <!-- middle -->
-      <nav>
-        <ul class="navbar">
-          <li><a href="">For you</a></li>
-          <li><a href="">Following</a></li>
-        </ul>
-      </nav>
-      <!--right side -->
-      <div class="right__section">
-        <div class="setting__btn" type="submit">
-          <img class="setting__icon" src="./icons/icons8-settings.svg" alt="" />
-        </div>
-        <img class="search__icon" src="./icons/search.svg" alt="" />
-        <input type="text" class="search-bar" placeholder="Search" />
-      </div>
-    </header>
-    <div class="container" >
-   
-    <!--Sidebar -->
-    <nav class="sidebar">
-      <div class="sidebar__link">
-        <img src="./icons/home.svg" alt="home.svg" />
-        <span class="notification__dot"></span>
-        <div>Home</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/search.svg" alt="explore.svg" />
-        <div>Explore</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/notifications.svg" alt="notifications.svg" />
-        <div>Notifications</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/message.svg" alt="message.svg" />
-        <div>Messages</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/list.svg" alt="list.svg" />
-        <div>Lists</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/bookmark.svg" alt="bookmark.svg" />
-        <div>Bookmarks</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/group.svg" alt="group.svg" />
-        <div>Communities</div>
-      </div>
-      <div class="sidebar__link">
-        <img class="twitter" src="./icons/twitter-logo.svg" alt="logo.svg" />
-        <div>Premium</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/person.svg" alt="person.svg" />
-        <div>Profile</div>
-      </div>
-      <div class="sidebar__link">
-        <img src="./icons/more.svg" alt="more.svg" />
-        <div>More</div>
-      </div>
-      <div>
-        <button class="tweet__button">Post</button>
-      </div>
-    </nav>
-  
-    <main >
-      <section class="feed__section">
-        <div class="feed__content">
-          <!-- <div>
-            <button class="feed__btn">Everyone &#118;</button>
+        <nav class="sidebar">
+          <div class="sidebar__link">
+            <img src="./icons/home.svg" alt="home.svg" />
+            <span class="notification__dot"></span>
+            <div>Home</div>
           </div>
-          <div> -->
+          <div class="sidebar__link">
+            <img src="./icons/search.svg" alt="explore.svg" />
+            <div>Explore</div>
+          </div>
+          <div class="sidebar__link">
+            <img src="./icons/notifications.svg" alt="notifications.svg" />
+            <div>Notifications</div>
+          </div>
+          <div class="sidebar__link">
+            <img src="./icons/message.svg" alt="message.svg" />
+            <div>Messages</div>
+          </div>
+          <div class="sidebar__link">
+            <img src="./icons/list.svg" alt="list.svg" />
+            <div>Lists</div>
+          </div>
+          <div class="sidebar__link">
+            <img src="./icons/bookmark.svg" alt="bookmark.svg" />
+            <div>Bookmarks</div>
+          </div>
+          <div class="sidebar__link">
+            <img src="./icons/group.svg" alt="group.svg" />
+            <div>Communities</div>
+          </div>
+          <div class="sidebar__link">
             <img
-              class="profile__picture"
-              src="./imgs/uzo.jpeg"
-              alt="profile picture"
+              class="twitter"
+              src="./icons/twitter-logo.svg"
+              alt="logo.svg"
             />
-            <input
-              type="text"
-              class="text__box"
-              placeholder="What's happening?!"
-            />
+            <div>Premium</div>
           </div>
-          <!-- <div>
-            <img src="./icons/globe.svg" alt="" />
-            <p>Everyone can reply</p>
-          </div> -->
-          <div class="feed__icons">
-            <!-- first icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 16 5-7 6 6.5m6.5 2.5L16 13l-4.3 6m2.3-9h0M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"/>
-            </svg>
-            </span>
-            <!-- 2nd icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.9 1.3 3.9 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.2-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z"/>
-            </svg>
-            </span>
-            <!-- 3rd icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M10.8 5a3 3 0 0 0-5.6 0H4a1 1 0 1 0 0 2h1.2a3 3 0 0 0 5.6 0H20a1 1 0 1 0 0-2h-9.2ZM4 11h9.2a3 3 0 0 1 5.6 0H20a1 1 0 1 1 0 2h-1.2a3 3 0 0 1-5.6 0H4a1 1 0 1 1 0-2Zm1.2 6H4a1 1 0 1 0 0 2h1.2a3 3 0 0 0 5.6 0H20a1 1 0 1 0 0-2h-9.2a3 3 0 0 0-5.6 0Z"/>
-            </svg>
-            
-            </span>
-            <!-- 4th icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM7 12.5c.3 0 .5.2.5.4l.2.1 1 .3a18.9 18.9 0 0 0 7.8-.4.5.5 0 0 1 1 .1 5 5 0 0 1-1.6 3.4 5.5 5.5 0 0 1-7.8 0A5 5 0 0 1 6.5 13c0-.3.2-.5.5-.5Zm9.5.4Zm-9 0Zm.9-4.8L9 6.8l.6 1.3 1.4.2-1 1 .2 1.3L9 10l-1.2.6.2-1.4-1-1 1.4-.1Zm6 0 .6-1.3.6 1.3 1.4.2-1 1 .2 1.3L15 10l-1.2.6.2-1.4-1-1 1.4-.1Z" clip-rule="evenodd"/>
-            </svg>
-            
-            </span>
-            <!-- 5th icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" d="M12.5 8.7a2.5 2.5 0 0 1 3.5 0 2.5 2.5 0 0 1 0 3.5l-1.1 1a1 1 0 0 0-.2-.2l-3-3-.3-.2 1.1-1Zm-2.4 2.5L7.3 14a1 1 0 0 0-.3.7v2c0 .6.4 1 1 1h2c.3 0 .5 0 .7-.3l2.8-2.8-.2-.2-3-3-.2-.2Z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M7 3c.6 0 1 .4 1 1v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h1V4c0-.6.4-1 1-1Zm10.7 8H19v8H5v-8h3.9l.5-.5c.2-.3.5-.4.9-.3 0 0 .2.1.2 0V10a1 1 0 0 1 .2-.9l1.1-1a3.5 3.5 0 0 1 4.9 0 3.5 3.5 0 0 1 1 2.9Z" clip-rule="evenodd"/>
-            </svg>  
-            <div class="tooltip">Schedule</div>
-            </span>
-            <!-- 6th icon -->
-            <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 14h0a7 7 0 1 0-11.5 0h0l.1.3.3.3L12 21l5.1-6.2.6-.7.1-.2Z"/>
-            </svg>
-            
-            </span>
+          <div class="sidebar__link">
+            <img src="./icons/person.svg" alt="person.svg" />
+            <div>Profile</div>
           </div>
-          <button class="post__btn">Post</button>
-        </div>
-        
+          <div class="sidebar__link">
+            <img src="./icons/more.svg" alt="more.svg" />
+            <div>More</div>
+          </div>
+          <div>
+            <button class="tweet__button">Post</button>
+          </div>
+        </nav>
       </section>
-     
-    
-      
-   
-    </main>
-    
-   
+      <section class="second__section">
+        <nav class="nav__content">
+          <ul>
+            <li><a href="">For you</a></li>
+            <li><a href="">Following</a></li>
+            <li><a href="">CSS Communities Questions</a></li>
+          </ul>
+          <span>
+            <img
+              class="setting__icon"
+              src="./icons/icons8-settings.svg"
+              alt=""
+            />
+          </sp>
+        </nav>
+        <div class="feed__content">
+          <img
+            class="profile__picture"
+            src="./imgs/uzo.jpeg"
+            alt="profile picture"
+          />
+          <input
+            type="text"
+            class="text__box"
+            placeholder="What is happening?!"
+          />
+        </div>
+        <div class="feed__icons">
+          <!-- first icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m3 16 5-7 6 6.5m6.5 2.5L16 13l-4.3 6m2.3-9h0M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+              />
+            </svg>
+          </span>
+          <!-- 2nd icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.9 1.3 3.9 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.2-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z"
+              />
+            </svg>
+          </span>
+          <!-- 3rd icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.8 5a3 3 0 0 0-5.6 0H4a1 1 0 1 0 0 2h1.2a3 3 0 0 0 5.6 0H20a1 1 0 1 0 0-2h-9.2ZM4 11h9.2a3 3 0 0 1 5.6 0H20a1 1 0 1 1 0 2h-1.2a3 3 0 0 1-5.6 0H4a1 1 0 1 1 0-2Zm1.2 6H4a1 1 0 1 0 0 2h1.2a3 3 0 0 0 5.6 0H20a1 1 0 1 0 0-2h-9.2a3 3 0 0 0-5.6 0Z"
+              />
+            </svg>
+          </span>
+          <!-- 4th icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM7 12.5c.3 0 .5.2.5.4l.2.1 1 .3a18.9 18.9 0 0 0 7.8-.4.5.5 0 0 1 1 .1 5 5 0 0 1-1.6 3.4 5.5 5.5 0 0 1-7.8 0A5 5 0 0 1 6.5 13c0-.3.2-.5.5-.5Zm9.5.4Zm-9 0Zm.9-4.8L9 6.8l.6 1.3 1.4.2-1 1 .2 1.3L9 10l-1.2.6.2-1.4-1-1 1.4-.1Zm6 0 .6-1.3.6 1.3 1.4.2-1 1 .2 1.3L15 10l-1.2.6.2-1.4-1-1 1.4-.1Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          <!-- 5th icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.5 8.7a2.5 2.5 0 0 1 3.5 0 2.5 2.5 0 0 1 0 3.5l-1.1 1a1 1 0 0 0-.2-.2l-3-3-.3-.2 1.1-1Zm-2.4 2.5L7.3 14a1 1 0 0 0-.3.7v2c0 .6.4 1 1 1h2c.3 0 .5 0 .7-.3l2.8-2.8-.2-.2-3-3-.2-.2Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7 3c.6 0 1 .4 1 1v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h1V4c0-.6.4-1 1-1Zm10.7 8H19v8H5v-8h3.9l.5-.5c.2-.3.5-.4.9-.3 0 0 .2.1.2 0V10a1 1 0 0 1 .2-.9l1.1-1a3.5 3.5 0 0 1 4.9 0 3.5 3.5 0 0 1 1 2.9Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div class="tooltip">Schedule</div>
+          </span>
+          <!-- 6th icon -->
+          <span>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.8 14h0a7 7 0 1 0-11.5 0h0l.1.3.3.3L12 21l5.1-6.2.6-.7.1-.2Z"
+              />
+            </svg>
+          </span>
+        </div>
+        <button class="post__btn">Post</button>
+<div>
+  <img class="profile__picture" src="./imgs/uzo.jpeg" alt="">
+  <div>
+    <p class="tweet-header">
+      <span class="tweet-author">Abraham John</span>
+      <span class="tweet-info"> @Abmankendrick &#x2022;   Feb 11</span>
+    </p>
+    <img src="" alt="">
   </div>
+  
+  <p class="tweet">
+    Which is Better? ✅
+  </p>
+  
+  <p class="tweet">
+    Let me know in the comments 😀
+  </p>
+</div>
+
+      </section>
+      <section class="third__section">
+        <form >
+          <img class="search__icon" src="./icons/search.svg" alt="" />
+          <input type="text" class="search__bar" placeholder="Search" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
