@@ -27,6 +27,12 @@
   font-size: 0.1rem;
 }
 
+.text_center {
+  text-align: center;
+  color: rgb(29, 155, 240);
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
 .feed__content {
   margin-top: 2rem;
 }
@@ -89,21 +95,30 @@
 }
 
 /* 2nd section content */
-.tweet-header {
+.tweet__header {
   margin-bottom: 5px;
 }
 
-.tweet-author {
+.tweet__author {
   font-weight: bold;
 }
 
-.tweet-info,
 .tweet {
-  color: rgb(100, 100, 100);
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(44, 44, 44);
 }
 
-.tweet {
-  width: 600px;
-  line-height: 25px;
-  margin-bottom: 20px;
+.tweet__image {
+  border: 1px solid red;
+}
+/* feed content  */
+.feed__content {
+  position: relative;
+}
+
+.more__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
