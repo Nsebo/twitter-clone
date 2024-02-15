@@ -20,6 +20,7 @@
   font-size: 0.9rem;
   outline: none;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .search__bar:active,
@@ -31,4 +32,57 @@
 .search__bar:focus {
   /* this added color to the input when you click on it */
   outline: 1px solid rgb(29, 155, 240);
+}
+
+/* subscribe section */
+
+.subscribe__section {
+}
+
+.subscribe__section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe__section p {
+  color: rgb(104, 103, 103);
+  width: 75%;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.subscribe__section button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.user__section {
+  position: relative;
+}
+
+.user__container {
+}
+
+.user__picture {
+  left: -3rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.user__header {
+}
+.user__name {
+}
+.user__info {
 }
