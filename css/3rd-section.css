@@ -1,26 +1,25 @@
 .third__section {
   width: 35%;
   position: relative;
-  /* background-color: salmon;
-  color: white; */
   height: 75vh;
 }
 
 .search__icon {
   position: absolute;
-  right: 20rem;
-  top: 0.5rem;
+  left: 1rem;
+  top: 0.3rem;
 }
+
 .search__bar {
   height: 2rem;
-  width: 14rem;
+  width: 12rem;
   border: none;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.7rem;
   font-size: 0.9rem;
   outline: none;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .search__bar:active,
@@ -62,14 +61,15 @@
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.subscribe__section button:hover {
+  opacity: 0.8;
 }
 
 .user__section {
   position: relative;
-}
-
-.user__container {
 }
 
 .user__picture {
@@ -80,9 +80,26 @@
   border-radius: 2rem;
 }
 
-.user__header {
-}
 .user__name {
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 .user__info {
+  font-size: 0.8rem;
+  color: rgb(83, 100, 113);
+}
+.user__content {
+  width: 50%;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.user__content p {
+  font-size: 1rem;
+}
+
+.host__imgs img {
+  width: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 10rem;
 }
