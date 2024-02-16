@@ -72,7 +72,13 @@
   position: relative;
 }
 
-.user__picture {
+.user__container {
+  display: flex;
+  align-items: center;
+  margin: 0.65rem 0;
+}
+
+.host__picture {
   left: -3rem;
   width: 1rem;
   height: 1rem;
@@ -80,26 +86,58 @@
   border-radius: 2rem;
 }
 
-.user__name {
-  font-size: 0.7rem;
+.host__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.host__container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.host__name {
+  font-size: 0.8rem;
   font-weight: bold;
 }
-.user__info {
+.host__info {
   font-size: 0.8rem;
   color: rgb(83, 100, 113);
 }
-.user__content {
-  width: 50%;
-  margin-top: 0.5rem;
-  position: relative;
+
+.host__para {
+  width: 45%;
+  font-weight: bold;
 }
-.user__content p {
-  font-size: 1rem;
+.host__imgs {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(88, 54, 175);
+  padding: 0.5rem;
+  height: 38px;
+  border-radius: 6rem;
 }
 
 .host__imgs img {
-  width: 1.5rem;
-  position: absolute;
-  top: 0;
-  left: 10rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+/* first image */
+.host__imgs .ral {
+  position: relative;
+  z-index: 5;
+}
+/* 2nd image */
+.host__imgs .rel {
+  z-index: 4;
+}
+
+/* 2nd and 3rd image */
+.host__imgs .mr {
+  margin-left: -0.5rem;
+  border: 1px solid white;
+}
+
+.btn {
+  font-size: 0.8rem;
 }
