@@ -41,6 +41,7 @@
 }
 
 /* main content */
+
 .feed__content {
   margin-top: 2rem;
 }
@@ -142,8 +143,8 @@
 
 .icons {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .icons__link {
@@ -151,18 +152,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.3rem;
-  padding: 1rem;
   cursor: pointer;
   color: rgb(104, 103, 103);
-  position: relative;
+}
+
+.icons__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .icons__link img {
   width: 1.5rem;
-}
-
-.last__icon {
-  position: absolute;
-  right: 1.2rem;
-  top: 5px;
 }
