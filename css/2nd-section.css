@@ -38,7 +38,7 @@
   text-align: center;
   color: rgb(29, 155, 240);
   font-size: 0.9rem;
-  letter-spacing: 3px;
+  margin-left: 3rem;
 }
 
 /* main content */
@@ -50,16 +50,16 @@
 .profile__picture {
   position: absolute;
   left: -3rem;
-  width: 2.3rem;
+  width: 2.5rem;
   height: 2.5rem;
   object-fit: cover;
   border-radius: 2rem;
 }
 
 .text__box {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: none;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   letter-spacing: 1px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .feed__icons svg {
-  width: 1.5rem;
+  width: 1.25rem;
 }
 .tooltip {
   position: absolute;
@@ -85,6 +85,7 @@
   font-size: 0.6rem;
   opacity: 0;
   transition: opacity 0.15s;
+  z-index: 999;
 }
 
 .feed__icons:hover,
@@ -94,16 +95,17 @@
 .post__btn {
   background-color: rgb(29, 155, 240);
   color: rgb(255, 255, 255);
-  padding: 0.6rem 1.2rem;
+  padding: 0.4rem 1.1rem;
   border: 0;
   border-radius: 2rem;
   position: absolute;
   right: 0.9rem;
-  top: 7.28rem;
+  top: 6.4rem;
   font-size: 0.8rem;
   margin-bottom: 0.6rem;
   opacity: 0.7;
   cursor: pointer;
+  z-index: 999;
 }
 
 /* 2nd section content */
@@ -115,11 +117,12 @@
   font-weight: bold;
 }
 
-.tweet {
+.tweet,
+.tweet__content {
   font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 0.8rem;
-  color: rgb(104, 103, 103);
+  color: rgb(68, 67, 67);
 }
 
 .tweet__image img {
@@ -129,10 +132,62 @@
   border-radius: 1rem;
 }
 
-.trecia__image {
-  margin-bottom: 0.6rem;
+/* tweet__content */
+.tweet__content {
+  width: 50vh;
 }
 
+.tweets {
+  font-weight: bold;
+  font-size: 0.84rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.tweet__content ul {
+  list-style-type: none;
+  color: rgb(90, 89, 89);
+}
+
+.tweet__content li {
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.tweet__strong {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.tweet__content h5 {
+  font-size: 0.88rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.tweet__content a,
+.continue__anchor {
+  color: rgb(29, 155, 240);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.tweet__content a:hover,
+.continue__anchor:hover {
+  text-decoration: underline;
+}
+
+.dhanian__image {
+  border: 1px solid rgb(231, 227, 227);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.continue {
+  margin: 0.2rem 0;
+}
+
+.continue__anchor:hover {
+  text-decoration: underline;
+}
 .more__icon {
   position: absolute;
   top: 0;
